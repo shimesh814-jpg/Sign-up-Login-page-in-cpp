@@ -21,7 +21,8 @@ void temp ::SingnUp()
   cout<<"\nEnter your Password : ";
   getline(cin,Password);
   
-  file.open("logindata.txt",ios :: out |ios :: app);
+  file.open("logindata.txt",ios :: out |ios :: app);   // Use Delimiter(asterisk (*) is used as a delimiter to separate fields in a file.)here.
+  file.close();
   file<<UserName<<"*"<<Email<<"*"<<Password<<endl;
   file.close();
 }
@@ -120,3 +121,4 @@ int main ()
     } 
   }
 }
+
